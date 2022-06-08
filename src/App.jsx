@@ -71,7 +71,7 @@ function App() {
 
   return (
     <div className="container ">
-      <div className=" row align-items-end">
+      <div className=" row align-items-center">
         <div className="col">
           <img
             src="https://timeweb.com/media/default/0001/03/3e7af564fca735a8f609f29e64feafefd70b4d69.png"
@@ -145,7 +145,7 @@ function App() {
               className="btn btn-primary mb-3"
               onClick={validate}
             >
-              Confirm identity
+              Send
             </button>
           </div>
         </div>
