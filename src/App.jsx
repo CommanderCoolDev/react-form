@@ -74,80 +74,82 @@ function App() {
       <div className=" row align-items-center">
         <div className="col">
           <img
-            src="https://timeweb.com/media/default/0001/03/3e7af564fca735a8f609f29e64feafefd70b4d69.png"
+            src="https://kept.com.ua/image/A0k/tip93(2).png"
             className="img-fluid"
             alt="Riba"
           ></img>
         </div>
         <div className="col">
-          <div className=" mb-3 ">
-            <label htmlFor="firstName" className="form-label ">
-              First Name
-            </label>
-            <input
-              type="text"
-              className="form-control"
-              id="firstName"
-              name="firstName"
-              placeholder="First Name"
-              required
-              {...firstName}
-            />
-          </div>
-          <div className="mb-3">
-            <label htmlFor="secondName" className="form-label">
-              Second Name
-            </label>
-            <input
-              type="text"
-              className="form-control"
-              id="secondName"
-              name="secondName"
-              placeholder="Second Name"
-              required
-              // onBlur={validateName}
-              {...secondName}
-            />
-          </div>
-          <div className="mb-3">
-            <label htmlFor="email" className="form-label">
-              Email address
-            </label>
-            <input
-              type="email"
-              className="form-control"
-              id="email"
-              name="email"
-              placeholder="email@example.com"
-              required
-              {...email}
-            />
-          </div>
-          <div className="mb-3">
-            <label htmlFor="phone" className="form-label">
-              Phone
-            </label>
-            <input
-              type="tel"
-              className="form-control"
-              id="phone"
-              name="phone"
-              placeholder="+9 (999) 999-9999"
-              required
-              onChange={handleChangePhone}
-              value={phone}
-              // {...phoneNum}
-            />
-          </div>
-          <div className="col-auto">
-            <button
-              type="submit"
-              className="btn btn-primary mb-3"
-              onClick={validate}
-            >
-              Send
-            </button>
-          </div>
+          <form>
+            <div className=" mb-3 ">
+              <label htmlFor="firstName" className="form-label ">
+                First Name
+              </label>
+              <input
+                type="text"
+                className="form-control"
+                id="firstName"
+                name="firstName"
+                placeholder="First Name"
+                required
+                {...firstName}
+              />
+            </div>
+            <div className="mb-3">
+              <label htmlFor="secondName" className="form-label">
+                Second Name
+              </label>
+              <input
+                type="text"
+                className="form-control"
+                id="secondName"
+                name="secondName"
+                placeholder="Second Name"
+                required
+                // onBlur={validateName}
+                {...secondName}
+              />
+            </div>
+            <div className="mb-3">
+              <label htmlFor="email" className="form-label">
+                Email address
+              </label>
+              <input
+                type="email"
+                className="form-control"
+                id="email"
+                name="email"
+                placeholder="email@example.com"
+                required
+                {...email}
+              />
+            </div>
+            <div className="mb-3">
+              <label htmlFor="phone" className="form-label">
+                Phone
+              </label>
+              <input
+                type="tel"
+                className="form-control"
+                id="phone"
+                name="phone"
+                placeholder="+9 (999) 999-9999"
+                required
+                onChange={handleChangePhone}
+                value={phone}
+                // {...phoneNum}
+              />
+            </div>
+            <div className="col-auto">
+              <button
+                type="submit"
+                className="btn btn-primary mb-3"
+                onClick={validate}
+              >
+                Send
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
